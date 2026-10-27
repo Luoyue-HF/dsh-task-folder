@@ -2,6 +2,8 @@
 
 让每个会话 / 任务的产物自动收进**自己的文件夹**，续做同一任务时换会话也能落回同一个文件夹，工作区根目录不再散落一堆文件。
 
+![一个任务一个文件夹](assets/example-workspace.png)
+
 ## 安装
 
 本插件是纯 JavaScript、**没有任何构建步骤**，装完即可用。多数 DSH 插件用 TypeScript 编写、需要 `prepare` 构建，而 pnpm ≥10 默认拒绝执行 git 依赖的构建脚本，用户得额外在 `pnpm-workspace.yaml` 里加 `allowBuilds` 放行才能装上；本插件不存在这个问题。
