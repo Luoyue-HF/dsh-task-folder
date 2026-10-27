@@ -1,0 +1,10 @@
+# dsh-task-folder：按会话/任务分配任务文件夹
+# 默认 rootMode=workspace + subdir 留空 —— 任务目录直接建在工作区根下，一个任务一个文件夹。
+- insert:
+    - id: dsh-task-folder
+      name: dsh-task-folder
+      config:
+        enabled: true
+        rootMode: workspace
+        subdir: ''
+        autoTitle: true

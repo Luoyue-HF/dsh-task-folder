@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 本插件在工作区里给任务目录打的标记文件
+.dsh-task-folder
+
+# 运行时数据
+.dsh-market/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时产物
+*.tmp
+*.bak
+*.tgz
+_snapshots/

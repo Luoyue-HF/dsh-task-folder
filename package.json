@@ -1,0 +1,68 @@
+{
+  "name": "dsh-task-folder",
+  "version": "0.2.1",
+  "type": "module",
+  "description": "让每个会话/任务自动拥有一个专属产物文件夹，换会话续做同一任务时复用同一文件夹",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "folders.test.js",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "task-folder",
+    "workspace",
+    "session",
+    "productivity",
+    "中文"
+  ],
+  "license": "MIT",
+  "author": "Luoyue-HF",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luoyue-HF/dsh-task-folder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Luoyue-HF/dsh-task-folder/issues"
+  },
+  "homepage": "https://github.com/Luoyue-HF/dsh-task-folder#readme",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "scripts": {
+    "test": "node --test folders.test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.2.0-rc.1 || ^0.2.1-0",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  }
+}
