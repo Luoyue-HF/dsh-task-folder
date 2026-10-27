@@ -1,6 +1,6 @@
 {
   "name": "dsh-task-folder",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "description": "让每个会话/任务自动拥有一个专属产物文件夹，换会话续做同一任务时复用同一文件夹",
   "main": "lib/index.js",
